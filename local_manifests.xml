@@ -4,22 +4,21 @@
         <remote name="main"
                 fetch="https://github.com/anoosragh69" />
 
-	<remote name="vendor-common"
-                fetch="https://gitlab.com/PixelBuilds" />
-	
-	<remote name="kernel"
-		fetch="https://github.com/DhineshCool/" />
+	<remote name="lineage"
+                fetch="https://github.com/LineageOS" />
 	
         <!-- Device trees -->
-        <project path="device/motorola/hanoip" name="android_device_motorola_hanoip" remote="main" revision="lineage-20" />
-        <project path="vendor/motorola/hanoip" name="android_vendor_motorola_hanoip" remote="main" revision="main" />
+        <project path="device/motorola/hanoip" name="android_device_motorola_hanoip" remote="main" revision="fourteen" />
+        <project path="vendor/motorola/hanoip" name="android_vendor_motorola_hanoip" remote="main" revision="fourteen" />
 
         <!-- Kernel tree -->
-        <project path="kernel/motorola/sm6150" name="cybertron_hanoip" remote="kernel" revision="14" clone-depth="1" />
+        <project path="kernel/motorola/hanoip" name="android_kernel_motorola_hanoip" remote="main" revision="fourteen" clone-depth="1" />
 
-        <!-- Common trees -->
-	<project path="device/motorola/sm6150-common" name="android_device_motorola_sm6150-common" remote="main" revision="unity" />
-        <project path="vendor/motorola/sm6150-common" name="android_vendor_motorola_sm6150-common" remote="vendor-common" revision="unity" clone-depth="1" />
+        <!-- Motorola Hardware -->
+	<project path="hardware/motorola" name="android_hardware_motorola" remote="lineage" revision="lineage-21" />
+        <project path="system/qcom" name="android_system_qcom" remote="lineage" revision="lineage-21" />
 
+	<!-- CameraGo -->
+	<project path="packages/apps/CameraGo" name="android_packages_apps_CameraGo" remote="main" revision="main" />
 
 </manifest>
